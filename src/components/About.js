@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeButton from "./ThemeButton";
+import Image from "next/image";
 
 function About() {
   return (
@@ -32,11 +33,14 @@ function About() {
           conceptualize a new era of creative and consulting.
         </p>
         <div className="basis-2/6 md:h-[475px]">
-          <img
-            src="/images/meet.gif"
-            alt=""
-            className="h-full w-full object-contain"
-          />
+          <div className="w-full h-full relative">
+            <Image
+              src={"/images/meet.gif"}
+              layout="fill"
+              objectFit="contain"
+              alt="meet.gif"
+            />
+          </div>
         </div>
       </div>
       <div className="flex justify-center py-8">
